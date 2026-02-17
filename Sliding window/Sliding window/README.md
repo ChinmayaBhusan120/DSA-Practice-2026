@@ -51,3 +51,27 @@ while (right < n) {
 
 
 Time Complexity → O(n)
+🧩 General Template (Variable Window)
+int left = 0;
+
+for (int right = 0; right < n; right++) {
+
+    // expand window
+
+    while (window is invalid) {
+        left++;
+    }
+
+    // update result
+}
+
+📊 Complexity Advantage
+Approach	Time Complexity
+Brute Force	O(n²)
+Sliding Window	O(n)
+
+🚀 When NOT To Use Sliding Window
+Non-contiguous elements
+Random selection problems
+Graph traversal
+DP without contiguous relation
