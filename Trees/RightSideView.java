@@ -1,3 +1,46 @@
+Problem Statement
+
+Given the root of a binary tree, imagine standing on the right side of the tree.
+Return the values of the nodes you can see ordered from top to bottom.
+
+Example
+
+Tree:
+
+        1
+       / \
+      2   3
+       \   \
+        5   4
+
+Right side view:
+
+[1, 3, 4]
+
+Because from the right side you see:
+
+Level 1 → 1
+Level 2 → 3
+Level 3 → 4
+ Key Idea
+    We use Level Order Traversal (BFS).
+
+At each level:
+
+Process all nodes
+The last node of that level is visible from the right side
+
+Algorithm
+Use Queue
+Process nodes level by level
+Record last node of each level
+
+
+
+
+
+
+
 import java.util.*;
 
 class RightSideView {
