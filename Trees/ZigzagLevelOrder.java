@@ -1,5 +1,39 @@
-import java.util.*;
+Problem Statement
 
+Given the root of a binary tree, return the zigzag level order traversal.
+
+Level 1 → left to right
+Level 2 → right to left
+Level 3 → left to right
+and so on…
+Example
+Tree:
+
+        3
+       / \
+      9   20
+         /  \
+        15   7
+
+Output:[[3],[20,9],[15,7]]
+    
+🧠 Key Idea
+We use BFS (Queue) like normal level order, but:
+
+ Alternate direction at each level
+
+Use a flag:
+leftToRight = true / false
+    
+Trick-Instead of reversing later, we insert:
+
+If leftToRight → add at end
+Else → add at beginning
+
+
+CODE------>>>>>
+
+    
 class ZigzagLevelOrder {
 
     public List<List<Integer>> zigzagLevelOrder(TreeNode root) {
@@ -55,3 +89,8 @@ class TreeNode {
     }
 }
 }
+Complexity
+
+Time Complexity:O(n)
+
+Space Complexity:O(n)
