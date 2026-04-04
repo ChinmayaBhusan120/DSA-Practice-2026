@@ -1,3 +1,4 @@
+PROBLEM STATEMENT-
 We have heights array.
 We want to maximize:
 Area = min(height[left], height[right]) * (right - left)
