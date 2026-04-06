@@ -44,7 +44,7 @@ current_position - last_position ≥ d
 If we can place all cows → valid.
 
 
-
+CODE----->>>>>>
 
 
 import java.util.Arrays;
