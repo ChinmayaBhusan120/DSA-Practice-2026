@@ -21,14 +21,14 @@ A Graph is a collection of:
     java
     List<List<Integer>> graph = new ArrayList<>();
  2️⃣ Adjacency Matrix
-int[][] graph = new int[n][n];
+    int[][] graph = new int[n][n];
 
 Graph Traversal Techniques
 🔹 Depth First Search (DFS)
-Uses recursion or stack
-Explores as deep as possible
+     Uses recursion or stack
+     Explores as deep as possible
 
-
+  CODE---->>>>
 void dfs(int node) {
     visited[node] = true;
     for (int neighbor : graph.get(node)) {
@@ -39,8 +39,9 @@ void dfs(int node) {
 }
 
 🔹 Breadth First Search (BFS)
-Uses queue
-Explores level by level
+      Uses queue
+      Explores level by level
+      
 Queue<Integer> queue = new LinkedList<>();
 queue.offer(start);
 
@@ -57,7 +58,6 @@ while (!queue.isEmpty()) {
 🧩 Grid-Based Graph Problems
 
     Many problems use a 2D grid, where:
-
     Each cell = node
     Movement = edges
 
