@@ -178,11 +178,8 @@ By definition, n! (n factorial) means: n × (n - 1) × (n - 2) × ... × 1
 which means
 
 3! = 3 × 2 × 1 = 6
-
 5! = 120
-
 10! = 3.6 million
-
 15! = over 1 trillion
 
 Even at n = 15, the numbers are already in the trillions which makes it completely impractical to compute.
