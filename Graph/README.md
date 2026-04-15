@@ -4,7 +4,6 @@ A Graph is a collection of:
 - Nodes (Vertices)
 - Edges (Connections)
 
-
   Types of Graphs
 
 - Undirected Graph
