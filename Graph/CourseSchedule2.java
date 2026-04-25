@@ -33,7 +33,7 @@ add new zero indegree nodes
 
 
   
-CODE---->>>>>>>>>>>>
+CODE---
 
 
 import java.util.*;
@@ -91,8 +91,7 @@ class Solution {
 
         return result;
 
- Pattern Used
-
+ Pattern Used-
  Topological Sort
  BFS (Kahn’s Algorithm)
  DAG ordering
