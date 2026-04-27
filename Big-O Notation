@@ -126,17 +126,13 @@ public class NSquare {
 Classic examples include simple sorting algorithms like:
 
 Bubble Sort
-
 Selection Sort
-
 Insertion Sort (worst case)
 
 All of them compare or swap elements in nested loops, leading to O(n²) behavior.
 
 These algorithms are fine for small inputs, but they become painfully slow as n grows:
-
 For n = 1,000, you’re doing around 1 million operations. And if n = 10,000, you’re looking at 100 million operations.
-
 In coding interviews and wherever performance matters, you’ll often want to avoid O(n²) and look for ways to bring it down to O(n log n) or better.
 
 Exponential Time – O(2ⁿ)
