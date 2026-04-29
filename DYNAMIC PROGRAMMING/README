@@ -1,0 +1,97 @@
+ What is Dynamic Programming?
+Dynamic Programming (DP) is a technique used to solve problems by:
+
+- Breaking them into **smaller subproblems**
+- Storing results to **avoid recomputation**
+
+👉 Key idea:
+    Solve once → reuse multiple times
+
+
+ When to Use DP?
+
+Use DP when a problem has:
+
+- 🔁 **Overlapping Subproblems**
+- 🔄 **Optimal Substructure**
+
+Common hints:
+- "Count ways"
+- "Minimum / Maximum"
+- "Best possible result"
+
+
+ Types of DP
+
+🔹 1. Recursion (Brute Force)
+- Solve using recursion
+- Very slow (repeated work)
+
+ 🔹 2. Memoization (Top-Down)
+
+- Store results in cache
+
+---java
+int[] dp;
+
+int solve(int n) {
+    if (n <= 2) return n;
+
+    if (dp[n] != -1) return dp[n];
+
+    return dp[n] = solve(n-1) + solve(n-2);
+}
+🔹 3. Tabulation (Bottom-Up)
+Build solution iteratively
+int[] dp = new int[n+1];
+dp[1] = 1;
+dp[2] = 2;
+for (int i = 3; i <= n; i++) {
+    dp[i] = dp[i-1] + dp[i-2];
+}
+
+🔹 4. Space Optimization
+Use variables instead of array
+int prev2 = 1, prev1 = 2;
+for (int i = 3; i <= n; i++) {
+    int curr = prev1 + prev2;
+    prev2 = prev1;
+    prev1 = curr;
+}
+
+
+🔥 Common DP Patterns
+
+Pattern	Example
+Fibonacci	Climbing Stairs
+1D DP	House Robber
+2D DP	Unique Paths
+Knapsack	0/1 Knapsack
+LIS	Longest Increasing Subsequence
+Partition	Subset Sum
+
+
+📊 Complexity
+
+
+Type	Time	Space
+Recursion	Exponential	O(n)
+Memoization	O(n)	O(n)
+Tabulation	O(n)	O(n)
+Optimized	O(n)	O(1)
+
+
+🎯 Steps to Solve DP
+Identify state
+Write recurrence relation
+Define base case
+Choose:
+Memoization OR Tabulation
+Optimize space if possible
+🚀 Example Insight
+
+For Climbing Stairs:
+
+f(n) = f(n-1) + f(n-2)
+
+👉 This is a classic DP pattern.
