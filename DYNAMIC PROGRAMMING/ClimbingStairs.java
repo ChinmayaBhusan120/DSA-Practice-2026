@@ -16,13 +16,10 @@ Ways:
 2 + 1
 🧠 Key Insight
 
-This is exactly:
+This is exactly:  f(n) = f(n-1) + f(n-2)  (Same as Fibonacci)
 
-f(n) = f(n-1) + f(n-2)
 
-👉 Same as Fibonacci
-
-🧠 Why?
+ Why?
 
 To reach step n:
 
@@ -42,7 +39,6 @@ class Solution {
 
         int prev2 = 1;
         int prev1 = 2;
-
         for (int i = 3; i <= n; i++) {
             int curr = prev1 + prev2;
             prev2 = prev1;
