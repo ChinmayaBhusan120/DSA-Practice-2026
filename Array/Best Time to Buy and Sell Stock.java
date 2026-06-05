@@ -1,3 +1,6 @@
+
+
+CODE--->>>>>
 class Solution {
     public int maxProfit(int[] prices) {
         int buy = 0;
